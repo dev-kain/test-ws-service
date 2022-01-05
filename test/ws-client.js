@@ -30,4 +30,4 @@ client.on('connect', function(connection) {
     sendNumber();
 });
 
-client.connect('ws://localhost:443/', 'echo-protocol');
+client.connect('ws://ws-service.herokuapp.com/', 'echo-protocol');
