@@ -29,5 +29,5 @@ client.on('connect', function(connection) {
     }
     sendNumber();
 });
-
-client.connect('ws://ws-service.herokuapp.com/', 'echo-protocol');
+host = process.argv[2] || 'ws://localhost:5000';
+client.connect(`${host}`);
